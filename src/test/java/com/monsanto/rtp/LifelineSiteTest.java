@@ -20,7 +20,7 @@ public class LifelineSiteTest {
     lifelineSite.setUnits(10);
     lifelineSite.setRate(700);
     
-    double billableAmount = lifelineSite.getTotalAmount();
+    double billableAmount = lifelineSite.getBillableAmount();
     
     assertThat(billableAmount, is(3836.00));
   }
@@ -30,7 +30,7 @@ public class LifelineSiteTest {
     lifelineSite.setUnits(10);
     lifelineSite.setRate(700.23);
     
-    double billableAmount = lifelineSite.getTotalAmount();
+    double billableAmount = lifelineSite.getBillableAmount();
     
     assertThat(billableAmount, is(3837.27));
   }
